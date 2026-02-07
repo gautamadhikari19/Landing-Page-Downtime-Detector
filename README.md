@@ -1,6 +1,6 @@
 # Landing Page Downtime Detector
 
-A lightweight monitoring dashboard for Vercel-hosted landing pages with client-managed DNS.
+A Next.js monitoring dashboard for Vercel-hosted landing pages with client-managed DNS.
 
 ## Features
 
@@ -14,17 +14,17 @@ A lightweight monitoring dashboard for Vercel-hosted landing pages with client-m
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
 Open `http://localhost:3000` to view the dashboard.
 
 ## Configuration
 
-Update the `landingPages` array in `server.js` with your production domains, client names, projects, and environments.
+Update the `landingPages` array in `lib/monitoring.js` with your production domains, client names, projects, and environments.
 
 ## Notes
 
 - Health checks run every 5 minutes by default.
 - The server stores history in memory (restart clears data). Add a database for long-term retention.
-- Alerting channels can be added by hooking into the `performCheck` workflow in `server.js`.
+- Alerting channels can be added by hooking into the `performCheck` workflow in `lib/monitoring.js`.
