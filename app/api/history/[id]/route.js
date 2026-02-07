@@ -1,4 +1,4 @@
-import { ensureMonitoring, getHistory } from "../../../../lib/monitoring.js";
+import { ensureMonitoring, getHistory } from "@/lib/monitoring";
 
 export const dynamic = "force-dynamic";
 

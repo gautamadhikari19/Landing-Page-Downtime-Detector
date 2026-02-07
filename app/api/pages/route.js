@@ -1,4 +1,4 @@
-import { ensureMonitoring, getLandingPages, getState } from "../../../lib/monitoring.js";
+import { ensureMonitoring, getLandingPages, getState } from "@/lib/monitoring";
 
 export const dynamic = "force-dynamic";
 
